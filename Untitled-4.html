@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>W3 School(header)</title>
+	<style>
+		body {
+			margin:0px;
+			width:100px;
+		}
+		.container {
+			display: grid;
+			grid-template-columns: 72px 340px  170px 10px 460px 1fr;
+			gap:7px;
+		   
+		}
+		.col {
+			text-align: center;
+		}
+		ul {
+			list-style-type:none;
+			overflow:hidden;
+			max-width: 100%;
+			padding:0px;
+			margin:0px;
+			font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			font-size:14px;
+			 font-weight: normal;
+			margin-top:-10px;
+		}
+		li {
+			float:left;
+		}
+		li a {
+			color:#000000;
+			display:block;
+			padding:30px 10px;
+			text-decoration: none;
+		}
+		
+		li a:hover {
+			background-color:#12882C;
+			
+         
+		}
+		.divright {
+			list-style-type:none;
+			overflow:hidden;
+			max-width: 100%;
+			padding:0px;
+			margin:0px;
+			font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			font-size:14px;
+			 font-weight: normal;
+			margin-top:-10px;
+			padding-left:69px;
+		}
+		.divright li {
+			float:left;
+		}
+		.divright li a {
+			color:#000000;
+			display:block;
+			padding:10px 10px;
+			text-decoration: none;
+			border-radius:25px;
+			margin-top:18px;
+		}
+		
+		.divright li a:hover {
+			background-color:#EFEBEB;
+
+		}
+		input {
+			width:150px;
+			border-radius:20px;
+			padding:8px;
+			border:1px solid #6C6C6C;
+			margin-right: 33px;
+			margin-top:-3px;
+		}
+		.search {
+			background-color:#ffffff;
+			border:none;	
+		}
+		.search img {
+			width: 21px;
+			position: absolute;
+			z-index: 99;
+			float: right;
+			margin-left: 49px;
+			margin-top:2px;
+			padding: 5px;
+
+		}
+		.search img:hover {
+    background-color: #F5F5F5;
+			border-radius:15px;
+			
+		}
+
+		.dropdown {
+			background-color:#ffffff;
+			border:none;
+			}
+		.dropdown img {
+			width: 20px;
+			position: absolute;
+			z-index: 99;
+			padding: 5px;
+			margin-left: -15px;
+		}
+		.dropdown img:hover {
+		    background-color: #F5F5F5;
+			border-radius:25px;
+		}
+	
+		.my-button {
+		    background-color:#29A228;
+			border-radius:9px;
+			font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			color:#ffffff;
+			font-size:16px;
+			border:1px solid #29A228;
+			width:100px;
+			height:35px;
+			margin-top:10px;
+		}
+		.my-button:hover {
+			background-color:#389016;
+			
+		}
+		.menu {
+			background-color: #2E2E2E;
+			list-style-type: none;
+			border: 1px solid #000000;
+			overflow: hidden;
+			position: absolute;
+			width: 1232px;
+			margin-top:-10px;
+			
+		}
+		.menu li {
+			float:left;
+		}
+		.menu li a {
+			display:block;
+			padding:5px 26px;
+			text-decoration:none;
+		    color:#FFFFFF;
+			font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			font-weight: inherit;
+			font-size:13px;
+		}
+	  .menu li a:hover {
+			background-color:#000000;
+		}
+		</style>
+</head>
+
+<body>
+		<header>
+	<div class="container">
+	 <div class="col col-1" style="margin-top:-5px;">
+		<a href="https://www.w3schools.com/" target="_blank" title="home">
+	<img src="W3Schools_logo.svg" alt="logo" width="50" height="35"
+	display="block" style="padding:18px; margin-left:-10px;">
+	</a>
+		</div>
+		<div class="col col-2">
+			<ul>
+		<li><a href="javascript:void(0)" title="Tutorials and References">Tutorials</a></li>
+	<li><a href="javascript:void(0)" title="References">References</a></li>
+	<li><a href="javascript:void(0)" title="Exercises and Qizzes">Exercises</a></li>
+		<li><a href="javascript:void(0)" title="Certificates">Certificates</a></li>	
+				</ul>
+	</div>
+
+		<div class="col col-3">
+<button class="search" type="button" onclick="document.location='default.asp'"><img src="search-alt-1.svg" alt="Search"></button>
+		<input type="text" id="search" name="search" placeholder="Search...">
+		</div>
+		<div class="col col-4">
+			<a href="javascript:void(0)" title="See more">
+	<button class="dropdown" type="button" onclick="document.location='default.asp'"><img src="3dots.png.svg" alt="3dot">
+		</button>
+		</a>
+	   </div>
+		<div class="col col-5">
+			<ul class="divright">
+		<li><a href="https://www.w3schools.com/practice/index.php" target="_blank" title="W3Schools Practice Coding Problem">Practice</a></li>
+	<li><a href="https://www.w3schools.com/spaces/index.php" target="_blank" title="Get Your Own Website With W3Schools Space">Space</a></li>
+	<li><a href="https://www.w3schools.com/academy/index.php" target="_blank" title="Contact us about W3schools Academy for educational institutions">Academy</a></li>
+	<li><a href="https://order.w3schools.com/plans" target="_blank" title="Become a PLUS user and unlock powerful features">Upgrade</a></li>
+		<li><a href="https://campus.w3schools.com/collections/course-catalog" target="_blank" title="W3Schools Certificates">Get Certificates</a></li>
+				</ul>
+			</div>
+		<div class="col col-6" style="padding-left:30px;">
+			<a title="Sign in to your account">
+	<button class="my-button" type="button" oneclick="document.location='default.asp'">Sign In</button>
+	</a>
+	</div>
+    </div>
+	<ul class="menu">
+	<li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a></li>
+	<li><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a></li>
+	<li><a href="https://www.w3schools.com/js/default.asp" target="_blank">JAVASCRIPT</a></li>
+	<li><a href="https://www.w3schools.com/sql/default.asp" target="_blank">SQL</a></li>
+	<li><a href="https://www.w3schools.com/python/default.asp" target="_blank">PYTHON</a></li>
+	<li><a href="https://www.w3schools.com/java/default.asp" target="_blank">JAVA</a></li>
+	<li><a href="https://www.w3schools.com/php/default.asp" target="_blank">PHP</a></li>
+	<li><a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a></li>
+	<li><a href="https://www.w3schools.com/c/index.php" target="_blank">C</a></li>
+	<li><a href="https://www.w3schools.com/cpp/default.asp" target="_blank">C++</a></li>
+	<li><a href="https://www.w3schools.com/cs/index.php" target="_blank">C#</a></li>
+	<li><a href="https://www.w3schools.com/howto/default.asp" target="_blank">HOW TO</a></li>
+	<li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" target="_blank">BOOTSTRAP</a></li>
+	<li><a href="https://www.w3schools.com/react/default.asp" target="_blank">REACT</a></li>
+	</ul>
+
+		</header>
+
+</body>
+</html>
